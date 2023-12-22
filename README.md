@@ -187,3 +187,77 @@ format and scale.
 5. Evaluate the quality of the model on the test dataset.
 6. Change the model parameters (e.g., number of hidden layers, number of neurons in the layers) and compare their effect on the quality of of recognition.
 7. Change the activation function in the neural network (e.g., ReLU, sigmoid) and compare their effect on the recognition quality.
+
+
+
+## TensorFlow
+
+1. Select a dataset to train the image classification model. Well-known datasets such as CIFAR-10, MNIST can be used.
+2. Configure the model architecture using TensorFlow. You can choose any model, such as convolutional neural networks (CNNs), or use an off-the-shelf architecture such as VGG, ResNet or Inception and apply it to the dataset.
+3. Divide the data set into training and test sets. It is recommended to use a proportion of 80% training data and 20% test data.
+4. Set up the model training process, including the choice of loss function, optimiser and training hyperparameters. You can use a loss function such as categorical cross-entropy and an optimiser such as stochastic gradient descent (SGD) or Adam.
+5. Train the model on training data and evaluate its performance using metrics such as accuracy or confusion matrix on a test dataset.
+6. Analyse the results, draw conclusions about the performance of the model and possible ways to improve it. Experiment with different architectures, hyperparameters and regularisation methods to improve classification accuracy.
+7. Bonus task: implement the ability to validate the model on real images that it has not seen during training. Test the model on a small set of real images and evaluate its performance.
+
+---
+
+## Individual assignment (regression)
+
+**Air Pollution Prediction**
+
+The dataset BeijingPM20100101_20151231.csv contains data on air pollution in Beijing, China from 1 January 2010 to 31 December 2015. The data were collected from
+through several air quality monitoring stations placed throughout the city. Each record in the dataset contains air quality information for a specific
+date and time.
+
+1. Dataset Loading.
+2. Exploring the dimensionality of the dataset and variable types.
+3. Checking for missing values and deciding whether to process them (filling or deleting missing values).
+4. Analyse the distribution of variables using descriptive statistics (mean, median, standard deviation).
+5. Examination of the correlation matrix between all variables to identify possible dependencies.
+6. Visualisation of the correlation matrix using heat map to visualise the strength and direction of relationships between variables.
+7. Study the distribution of the target variable (air pollution) using histogram.
+8. Construction of boxplots to detect outliers and anomalous values in numerical variables.
+9. Convert categorical attributes (if any) to numeric attributes by creating dummy variables.
+10. Splitting the dataset into training and test samples for subsequent training and estimation of the regression model.
+11. Applying a method of scaling (e.g. standardisation) of numerical features to improve model performance.
+12. Selecting a regression model (e.g., linear regression or random forest) and training the model on the training data.
+13. Estimating the model on test data using regression metrics such as coefficient of determination (R^2) or mean square error (MSE).
+14. Interpretation of the obtained results and analysing the significance of the features using the model coefficients.
+15. Predicting air pollution consumption for new observations based on a trained regression model.
+16. Visualising the relationship between air pollution variables and other factors using scatter plots.
+17. Applying data transformations (e.g. logarithmisation) to improve the linearity of the relationship between variables.
+18. Assessing the significance of selected features using statistical tests (e.g. t-test).
+19. Creating new features based on existing features (e.g., combination of two variables).
+20. Checking the model for overfitting and selecting the optimal number of features using cross-validation.
+
+
+## Individual assignment (classification)
+
+**Predict whether a person will agree to open a bank deposit**
+
+Description: You need to build a classification model to predict whether a customer will sign up for a bank deposit based on various factors provided in the Bank Marketing dataset.
+
+1. Loading and reviewing the dataset:
+   - Load the dataset and view the first 5 rows;
+   - Viewing general information about the data (number of rows, data types, presence of missing values, etc.);
+   - Examining the statistics of the data (mean, standard deviation, maximum and minimum values);
+   - Examining the distribution of the target variable (number of positive and negative classes).
+2. Data pre-processing:
+   - Processing missing values (filling in or deleting missing data);
+   - Convert categorical attributes to numeric values using encoding, e.g. using the One-Hot Encoding method;
+   - Scaling of numeric variables (normalisation or standardisation) (e.g. using the StandardScaler method)
+3. Data visualisation:
+   - Constructing histograms for numerical variables to examine their distribution;
+   - Constructing bar charts for categorical variables to examine their distribution;
+   - Constructing a correlation matrix to examine the relationship between variables.
+4. Preparation of data for modelling:
+   - Separation of data into training and test samples;
+   - Uniform distribution of classes in training and test samples (application of methods for handling unbalanced data).
+5. Building a classification model:
+   - Selecting appropriate machine learning algorithms for classification (e.g., logistic regression, random forest, gradient bousting, etc.);
+   - Training the model on the training sample;
+   - Assessing the quality of the model using metrics (accuracy, completeness, F1-measure, ROC-curve, etc.);
+   - Selection of model hyperparameters to achieve better performance.
+
+Repeat step 5 for other classification algorithms and compare them with each other.
